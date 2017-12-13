@@ -343,7 +343,7 @@ var showEndSlide = function(lesson, slide) {
 
     headerDiv.innerHTML = '<span id="header-text">' + 'End of this section' + '</span>';
 
-    htmlDiv.innerHTML = '<span id="html-text">' + '<ul><li>Arrow LEFT to go back and review</li><li>Click here to start a <a href="/quiz?mode=key&unit='+currentLesson+'">drill</a> on what you have just learned</li></ul>';
+    htmlDiv.innerHTML = '<span id="html-text">' + '<ul><li>Arrow LEFT to go back and review</li><li>Click here to start a <a href="/quiz?mode=key&unit='+(currentLesson-1)+'">drill</a> on what you have just learned</li><li>Or go to the Steno Keyboard menu to learn about more fingering</li></ul>';
 
     keyboardDiv.style.display = "block";
 
@@ -497,7 +497,7 @@ var onKeyDownEvent = function(event) {
 }
 
 
-var onKeyUpEvent = function() {
+var onKeyUpEvent = function(event) {
   var keyID = event.keyCode || event.which;
 
   var elements = document.getElementsByClassName("code-" + keyID);

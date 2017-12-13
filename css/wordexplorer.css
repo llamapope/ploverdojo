@@ -1,19 +1,19 @@
-.toggle-state-0 {
+.KeyState-None {
     /* Color normal */
-    color: #679c9f;
+    color: #3D6961; /* Dark Green */
     background-color: #FFFEFD;
 }
 
-.toggle-state-1 {
+.KeyState-Include {
     /* Color include */
     color: #FFFEFD;
-    background: #83B5A7; /* Green */
+    background: #568078; /* Green */
 }
 
-.toggle-state-2 {
+.KeyState-Required {
     /* Color require*/
     color: #FFFEFD;
-    background: #F6A354; /* Orange */
+    background: #F6A354 /* Bold Orange */
 }
 
 .wordlist {
@@ -32,9 +32,9 @@
 }
 
 .orange {
-    background-color: #F6A354; /* Orange */
+    background-color: #F6A354 /* Bold Orange */
 }
 
 .bluegreen {
-    background-color: #83B5A7; /* Green */
+    background-color: #568078; /* Green */
 }

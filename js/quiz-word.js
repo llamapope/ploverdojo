@@ -648,6 +648,11 @@
         }, 100); // the smaller this number, the more accurate the timer will be
     }
 
+    function classEscape(s) {
+        return s.replace(/\W/g, '-');
+
+    }
+
     function getReadyDialog(message) {
 
         $('#countdown-dialog-modal').dialog({
@@ -674,7 +679,7 @@
                 // lay out the words
                 var innerHtml = '';
                 for (item in testdata) {
-                    innerHtml += '<li class="target-word-' + testdata[item][0] + '" title="' + testdata[item][1] + '">' + testdata[item][0] + '</li> '; // don't forget the space
+                    innerHtml += '<li class="target-word-' + classEscape(testdata[item][0]) + '" title="' + testdata[item][1] + '">' + testdata[item][0] + '</li> '; // don't forget the space
                 }
 
                 $('#progress').html(innerHtml);
@@ -874,12 +879,12 @@
             }
 
             if (wordReady) {
-                $('#progress .target-word-' + key).removeClass('tried').addClass('mastered');
+                $('#progress .target-word-' + classEscape(key)).removeClass('tried').addClass('mastered');
                 masteredList[key] = true;
             }
             else {
                 if (!masteredList[key]) {
-                    $('#progress .target-word-' + key).addClass('tried');
+                    $('#progress .target-word-' + classEscape(key)).addClass('tried');
                 }
             }
         }
@@ -1554,7 +1559,6 @@
     $(window).focus(function () {
         resetKeys();
     });
-
 
 })
 ;

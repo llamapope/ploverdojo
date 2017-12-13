@@ -22,3 +22,7 @@
 .tag:after {
     content: ' ';
 }
+
+.top-bar-section li a:not(.button).active, .top-bar-section .dropdown li a.active {
+   background-color: #F6A354 /* Bold Orange */ !important;
+}

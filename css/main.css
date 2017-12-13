@@ -15,8 +15,8 @@
   border-radius: 12px;
 
   /* Colors - put the colors for the content of the box
-  color: #000000; #7AA099;   blue-green
-  background-color: #FFFEFD; #F6A354;   orange
+  color: #000000; #3D6961;
+  background-color: #FFFEFD; #F6A354;   /* Orange */
 
   /* Text - put styles that affect the content text
   font-family: "MuseoSlab500", arial, sans-serif;
@@ -28,14 +28,14 @@
 
 html {
     height: 100%; /* fixes background not showing */
-    background-color: #7AA099; /* Dark Green */
+    background-color: #3D6961; /* Dark Green */
 }
 
 body {
     margin: 0 auto;
 
     /* Colors */
-    background-color: #7AA099; /* Dark Green */
+    background-color: #3D6961; /* Dark Green */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8076bbb6', endColorstr='#749490', GradientType=1);
 
     /* Text */
@@ -64,7 +64,7 @@ header > img {
 
 main {
     /* Box */
-    background-color: #7AA099; /* Dark Green */
+    background-color: #3D6961; /* Dark Green */
     padding: 30px;
     display: block;
 }
@@ -110,7 +110,7 @@ figure {
 
 #welcome-text {
     /* Colors */
-    color: #F6A354; /* orange */
+    color: #FFB56F; /* Orange */
 
     /* Text */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 0.5); /* emboss effect */
@@ -137,13 +137,10 @@ h1 {
 
 #tagline-text {
     /* Colors */
-    color: #F6A354; /* orange */
+    color: #FFB56F; /* Orange */
 
     /* Text */
     font-size: 1em;
-
-    text-shadow: 2px 2px 1px rgba(123, 193, 188, 0.75), 3px 3px 1px #FFFEFD; /* retro effect */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 0.5); /* emboss effect */
 }
 
 h2 {
@@ -180,8 +177,9 @@ p {
 }
 
 aside {
-    font-size: 0.8em;
-    padding-bottom: 0.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 1em;
     font-style: italic;
 }
 
@@ -222,13 +220,32 @@ a.arrow-button > button {
 /*** MISC ***/
 
 /** foundation overrides */
+
+a {
+    color: #FFB56F; /* Orange */
+}
+
+a:hover, a:focus {
+    color: #ff9f2f; /* Orange, highlight */
+}
+
+.button, button {
+    background-color: #568078; /* Green */
+    color: #FFFEFD;
+    border-color: #FFFEFD;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #6da199; /* Green, highlight */
+}
+
 .panel {
     background-color: transparent;
     border-width: 3px;
 }
 
 .sub-nav dt.active a, .sub-nav dd.active a {
-    background-color: #F6A354; /* Orange */
+    background-color: #FFB56F; /* Orange */
 }
 
 .top-bar {
@@ -240,8 +257,12 @@ a.arrow-button > button {
 }
 
 .top-bar, .top-bar-section li a:not(.button), .top-bar-section .dropdown li a, .top-bar-section ul {
-    background-color: #83B5A7; /* Green */
+    background-color: #568078; /* Green */
 
+}
+
+.top-bar-section li a:not(.button):hover, .top-bar-section ul li:hover > a {
+    background-color: #F6A354 /* Bold Orange */
 }
 
 .sub-nav dd a {
@@ -249,20 +270,22 @@ a.arrow-button > button {
 }
 
 .label {
-
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 0.5); /* emboss effect */
-
+    background-color: transparent;
+    color: #FFB56F; /* Orange */
 }
 
 .label .success {
-    background-color: #F6A354; /* Orange */
-
+    color: #FFB56F; /* Orange */
 }
 
 .reveal-modal {
-    background-color: #83B5A7; /* Green */
+    background-color: #568078; /* Green */
 }
 
 .reveal-modal .close-reveal-modal {
     color: inherit;
+}
+
+.progress .meter {
+    background-color: #F6A354 /* Bold Orange */
 }

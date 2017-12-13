@@ -116,7 +116,7 @@ body {
 #quiz-prompt {
     /* Position */
     position: absolute;
-    top: 60px;
+    top: 120px;
     left: 37px;
 
     /* Box */
@@ -126,7 +126,7 @@ body {
     display: none;
 
     /* Colors */
-    background-color: #F6A354; /* orange */
+    background-color: #FFB56F; /* Orange */
 }
 
 #quiz-prompt > h2 {
@@ -265,7 +265,7 @@ body {
 .incorrect {
     /* Colors */
     color: #FFFEFD;
-    background-color: #F6A354; /* orange */
+    background-color: #FFB56F; /* Orange */
     background-image: url('../assets/incorrect.png');
     background-repeat: no-repeat;
 }

@@ -300,9 +300,9 @@
 		"tags": "left-hand multi-key alphabet group-6"
 	},
 	{
-		"title": "STKPB = Z",
-		"include": "STKPBAO*EUFRPBLGTS",
-		"require": "STKPB",
+		"title": "STKPW = Z",
+		"include": "STKPWAO*EUFRPBLGTS",
+		"require": "STKPW",
 		"tags": "left-hand multi-key alphabet group-6"
 	},
 	{

@@ -71,21 +71,25 @@
 <style>
         /** Steno Speed Bar Chart **/
     .chart {
-        background: #7AA099;
+        background:  #3D6961; /* Dark Green */
         margin: 5px;
     }
 
     .chart rect {
-        stroke: #7AA099;
+        stroke: #3D6961; /* Dark Green */
         fill: white;
     }
 
     .chart text {
-        fill: #7AA099;
+        fill:  #3D6961; /* Dark Green */
+    }
+
+    .chart text.rule {
+        fill: white;
     }
 
     .chart text.name {
-        fill: #000;
+        fill: white;
     }
 
     .chart line {
@@ -305,8 +309,8 @@
             .data(methods)
             .enter().append('text')
             .attr('x', (text_label - 5))
-            .attr('y', function (d) {
-                return y(d) + y.rangeBand() / 2;
+            .attr('y', function (d, i) {
+                return i * (bar_height + vertical_gap * 2) + 25;
             })
             .attr('dy', '.36em')
             .attr('text-anchor', 'end')

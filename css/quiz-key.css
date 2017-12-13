@@ -125,7 +125,7 @@ body {
     width: 250px;
 
     /* Colors */
-    background-color: #F6A354; /* orange */
+    background-color: #FFB56F; /* Orange */
 }
 
 #quiz-prompt > h2 {
@@ -256,7 +256,7 @@ body {
 .incorrect {
     /* Colors */
     color: #FFFEFD;
-    background-color: #F6A354; /* orange */
+    background-color: #FFB56F; /* Orange */
     background-image: url('../assets/incorrect.png');
     background-repeat: no-repeat;
 }
